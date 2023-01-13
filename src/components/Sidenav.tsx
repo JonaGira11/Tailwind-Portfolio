@@ -13,10 +13,8 @@ const Sidenav = () => {
     const handleColorMode = () => {
         setColorMode(colorMode === "light" ? "dark" : "light")
     }
-
     const handleNav = () => {
         setNav(!nav)
-        console.log("state changed")
     }
 
     return (
