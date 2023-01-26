@@ -1,5 +1,6 @@
 import Main from "./components/Main"
 import Sidenav from './components/Sidenav'
+import About from "./sections/About"
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <div>
       <Sidenav />
       <Main />
+     <About/>
     </div>
   )
 }
