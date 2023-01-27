@@ -40,7 +40,7 @@ export const Portfolio: Portfoliotype[] = [
     },
     {
         id: 3,
-        title: "Shopping Cart",
+        title: "Cart App",
         demo: "https://shopping-cart-v1.vercel.app/",
         github: "https://github.com/JonaGira11/Shopping-cart-V1",
         image: ShoppingCartThumbnail

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import ProjectItem from './ProjectItem'
 import { Portfolio } from '../constants/data'
 const Projects = () => {
@@ -12,19 +12,19 @@ const Projects = () => {
                 <div className='grid sm:grid-cols-2 gap-12'>
                     {Portfolio.map((portdata => (
                         <ProjectItem
-                         key={portdata.id} 
-                        title={portdata.title}
-                        image={portdata.image}
-                        demo={portdata.demo}
-                        github={portdata.github}
+                            key={portdata.id}
+                            title={portdata.title}
+                            image={portdata.image}
+                            demo={portdata.demo}
+                            github={portdata.github}
                         />
                     )))}
-                
-                
 
+
+
+                </div>
             </div>
-            </div>
-            
+
 
         </section>
     )
