@@ -6,7 +6,7 @@ function App() {
 
 
   return (
-    <div>
+    <div className="bg-pink">
       <Sidenav />
       <Main />
      <About/>
