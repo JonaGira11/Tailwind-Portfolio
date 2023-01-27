@@ -6,15 +6,19 @@ import nextjs from "../images/logos/nextjs.png";
 import node from "../images/logos/node.png";
 import typscript from "../images/logos/typescript.png";
 import tailwind from "../images/logos/tailwind.png";
+const HuluThumnail: string = new URL("../images/thumbnails/huluThumbnail.png", import.meta.url).href
+const MetaversusThumbnail: string = new URL("../images/thumbnails/metaversusThumbnail.png", import.meta.url).href
+const ShoppingCartThumbnail: string = new URL("../images/thumbnails/shoppingCartThumbnail.png", import.meta.url).href
+const MordernUIThumbnail: string = new URL("../images/thumbnails/MordernUIThumbnail.png", import.meta.url).href
 
 
 
-
-type Portfoliotype =
+export type Portfoliotype =
     {
         id: number,
         title: string,
-        subheading: string,
+        demo: string,
+        github: string,
         image: string
     }
 
@@ -22,16 +26,33 @@ type Portfoliotype =
 export const Portfolio: Portfoliotype[] = [
     {
         id: 1,
-        title: "yelpcamp",
-        subheading: "A Full-stack web applicaton made using Node.js for the back-end and MongoDB Atlas as a cloud datbase. Yelpcamp allows users to create, review and delete campgorunds. You have to start by creating an account to utilise.",
-        image: "hello"
+        title: "Hulu Clone",
+        demo: "https://hulu-clone-jonagira11.vercel.app/",
+        github: "https://github.com/JonaGira11/HuluClone",
+        image: HuluThumnail
     },
     {
         id: 2,
-        title: "Todo App",
-        subheading: "It can be difficult to remember everything we need to do. This is where this Todo App comes in handy. A functioning crud application that allows users to stores tasks on MongoDD that are instanly dispalyed on the page with ejs.",
-        image: "dashf"
+        title: "Metaversus",
+        demo: "https://metaversus-self.vercel.app/",
+        github: "https://github.com/JonaGira11/Metaversus/tree/main",
+        image: MetaversusThumbnail
     },
+    {
+        id: 3,
+        title: "Shopping Cart",
+        demo: "https://shopping-cart-v1.vercel.app/",
+        github: "https://github.com/JonaGira11/Shopping-cart-V1",
+        image: ShoppingCartThumbnail
+    },
+    {
+        id: 4,
+        title: "Modern UI",
+        demo: "https://modern-ui-react-tailwind.vercel.app/",
+        github: "https://github.com/JonaGira11/ModernUI-React-Tailwind/tree/main",
+        image: MordernUIThumbnail
+    },
+
 ]
 
 
