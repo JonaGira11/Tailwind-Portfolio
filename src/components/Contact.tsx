@@ -26,7 +26,7 @@ export const Contact = () => {
                         <label className='uppercase text-sm py-2 text-stone-400 font-semibold'>Message</label>
                         <textarea className='accent-neutral-300 border-2 rounded-lg p-3 border-gray-300 resize-none dark:bg-stone-800 dark:text-white' rows={10} name="message"></textarea>
                     </div>
-                    <button className='bg-sky-800' />
+                    <button className='bg-sky-800' >Send Message</button>
                 </form>
             </div>
 
