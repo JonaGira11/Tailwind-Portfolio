@@ -1,4 +1,4 @@
-import { AiOutlineMenu, AiOutlineHome, AiOutlineUser, AiOutlineProject, AiOutlineMacCommand, AiOutlineMail } from "react-icons/ai"
+import { AiOutlineMenu, AiOutlineHome, AiOutlineUser, AiOutlineProject, AiOutlineMail } from "react-icons/ai"
 import { WiMoonAltWaxingCrescent4 } from "react-icons/wi"
 import {FiSun} from "react-icons/fi"
 import { useState } from "react"

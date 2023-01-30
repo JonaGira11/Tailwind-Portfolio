@@ -3,6 +3,7 @@ import Projects from "./components/Projects"
 import Sidenav from './components/Sidenav'
 import About from "./sections/About"
 import { Contact } from "./components/Contact"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Projects/>
       <Contact />
+      <Footer/>
     </div>
   )
 }
