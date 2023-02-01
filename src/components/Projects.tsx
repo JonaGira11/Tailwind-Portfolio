@@ -3,7 +3,7 @@ import ProjectItem from './ProjectItem'
 import { Portfolio } from '../constants/data'
 const Projects = () => {
     return (
-        <section id='projects' className="py-5  dark:bg-neutral-800 ">
+        <section id='projects' className="py-5  dark:bg-neutral-800 " aria-label='projects section'>
             <div className=' max-w-5xl mx-auto p-4 py-16 md:pl-20'>
                 <div className="pb-10">
                     <h2 className=" md:text-4xl text-2xl font-bold text-center text-sky-700 border-b-4 border-sky-700 inline">Projects</h2>

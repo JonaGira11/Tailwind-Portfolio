@@ -22,9 +22,10 @@ const Sidenav = () => {
         <div>
             {/* small screens */}
             
-            <AiOutlineMenu size={25} className=" cursor-pointer absolute top-4 right-4 z-[99] md:hidden dark:text-white" onClick={handleNav} />{
+            <AiOutlineMenu size={25} className=" cursor-pointer absolute top-4 right-4 z-[99] md:hidden dark:text-white" onClick={handleNav}
+             />{
                 nav ? (
-                    <div className="fixed w-full h-screen bg-white flex flex-col justify-center items-center z-20 md:hidden dark:bg-zinc-700">
+                    <div className="fixed w-full h-screen bg-white/50 flex flex-col justify-center items-center z-20 md:hidden dark:bg-zinc-700/60">
                         <a 
                          onClick={handleNav}  
                         href="#main" className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in dark:bg-zinc-600  dark:text-white dark:shadow-zinc-900 ">
