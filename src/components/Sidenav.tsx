@@ -3,6 +3,7 @@ import { WiMoonAltWaxingCrescent4 } from "react-icons/wi"
 import {FiSun} from "react-icons/fi"
 import { useState } from "react"
 import useColorMode from "../hooks/use.ColorMode"
+import { motion } from "framer-motion"
 
 
 const Sidenav = () => {
@@ -61,7 +62,21 @@ const Sidenav = () => {
                 )
             }
             {/* large screens */}
-            <div className="md:block hidden fixed  top-[25%] z-10">
+            <motion.div 
+            initial={{
+                x: -500,
+                opacity: 0,
+                scale: 0.5,
+            }}
+            animate={{
+                x:0,
+                opacity: 1,
+                scale: 1,
+            }}
+            transition={{
+                duration: 1.5,
+            }}
+            className="md:block hidden fixed  top-[25%] z-10">
                 <div className="flex flex-col ">
                     <a href="#main" className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2  p-4 cursor-pointer hover:scale-110 ease-in duration-100 dark:bg-zinc-600  dark:text-white dark:shadow-zinc-700">
                         <AiOutlineHome size={20} />
@@ -86,7 +101,7 @@ const Sidenav = () => {
                         
                     </button>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }
