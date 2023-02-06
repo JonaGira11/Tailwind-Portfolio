@@ -43,7 +43,7 @@ const Main = () => {
             transition: {
               type: 'spring',
               duration: 1,
-              delay:1.1
+              delay:0.5
             
             },
           }}}
@@ -60,7 +60,7 @@ const Main = () => {
             transition: {
               type: 'spring',
               duration: 1.1,
-              delay:1.2
+              delay:0.7
             
             },
           }}}
