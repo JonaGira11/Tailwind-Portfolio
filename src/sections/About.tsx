@@ -24,7 +24,8 @@ const About = () => {
         </div>
 
         {aboutPara.map((aboutpara) => (
-          <motion.div variants={slideIn} >
+          <motion.div variants={slideIn}
+          viewport={{ once: true, amount: 0.1 }} >
             <ParaText key={aboutpara.id}>{aboutpara.para}</ParaText>
           </motion.div>
         ))}

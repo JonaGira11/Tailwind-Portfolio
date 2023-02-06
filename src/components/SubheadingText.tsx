@@ -8,7 +8,8 @@ type PropsType = {
 const SubheadingText = ({text}:PropsType) => {
   return (
     <motion.p className=" text-stone-400 text-base font-semibold"
-    variants={subheadingVariantsP} >
+    variants={subheadingVariantsP}
+    viewport={{ once: true, amount: 0.2 }} >
   {Array.from(text).map((letter, index) => (
       <motion.span variants={subheadingVariantsS} key={index} >
         {letter === ' ' ? '\u00A0' : letter}
