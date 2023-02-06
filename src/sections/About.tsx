@@ -3,120 +3,54 @@ import ParaText from "../components/ParaText"
 import { skillsInfo } from "../constants/data"
 import { motion } from "framer-motion"
 import SubheadingText from "../components/SubheadingText"
+import { outterContainer, headingVariants, slideIn, staggerChildren, staggerContainer } from "../utils/motion"
 
-const container = {
-  hidden: {},
-  visible: {
-    transition: { staggerChildren: 0.2 },
-  },
-};
 
 const About = () => {
   return (
     <section id='about' className="py-5 dark:bg-neutral-800  overflow-hidden" aria-label="about section">
-      <motion.div
-       variants={{
-        hidden: {},
-        show: {
-          transition: {
-            staggerChildren:0.05,
-            delayChildren:0.05,
-          },
-        },
-      }}
-      initial="hidden"
-    whileInView="show"
-    viewport={{ once: false, amount: 0.2 }}
-     className=' max-w-5xl mx-auto p-4 py-16 md:pl-20 '>
+      <motion.div className=' max-w-5xl mx-auto p-4 py-16 md:pl-20 '
+        variants={outterContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.2 }}>
         <div className="pb-10">
-          <motion.h2
-            variants={{
-              hidden: {
-                opacity: 0,
-                y: 20,
-              },
-              show: {
-                opacity: 1,
-                y: 0,
-                transition: {
-                  type: 'tween',
-                  ease: 'easeIn',
-                  duration: 1
-                },
-              },
-            }}
+          <motion.h2 className=" md:text-4xl text-2xl font-bold text-center text-sky-700 border-b-4 border-sky-700 inline tracking-wider"
+            variants={headingVariants}
             initial="hidden"
             whileInView="show"
-            className=" md:text-4xl text-2xl font-bold text-center text-sky-700 border-b-4 border-sky-700 inline tracking-wider">ABOUT</motion.h2>
+            viewport={{ once: true }}
+          >ABOUT</motion.h2>
         </div>
 
         {aboutPara.map((aboutpara) => (
-          <motion.div
-          variants={{
-            hidden: {
-              x: "100%",
-              y: "0",
-            },
-            show: {
-              x: 0,
-              y: 0,
-              transition: {
-                type:"tween",
-                delay:0.2,
-                duration: 1,
-                ease: 'easeOut',
-              },
-            },
-          }}
-          >
-          <ParaText key={aboutpara.id}>{aboutpara.para}</ParaText>
+          <motion.div variants={slideIn} >
+            <ParaText key={aboutpara.id}>{aboutpara.para}</ParaText>
           </motion.div>
         ))}
         <div className="py-10">
-          <motion.h3
-            variants={{
-              hidden: {
-                opacity: 0,
-                y: 20,
-              },
-              show: {
-                opacity: 1,
-                y: 0,
-                transition: {
-                  type: 'tween',
-                  ease: 'easeIn',
-                  duration: 1,
-                  delay: 0.1,
-                },
-              },
-            }}
+          <motion.h3 className=" mt-10 md:text-3xl text-2xl font-bold text-center text-sky-700 border-sky-700 border-b-4 pb-2 inline tracking-wider"
+            variants={headingVariants}
             initial="hidden"
             whileInView="show"
-            className=" mt-10 md:text-3xl text-2xl font-bold text-center text-sky-700 border-sky-700 border-b-4 pb-2 inline tracking-wider">SKILLS</motion.h3>
+            viewport={{ once: true }}
+          >SKILLS</motion.h3>
         </div>
-
-       
-        <SubheadingText text="Here are some of the technogies i have worked with"/>
-
-        <motion.div 
-           initial="hidden"
-           whileInView="visible"
-           viewport={{ once: false, amount: 0.5 }}
-           variants={container}
-        className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 py-8 px-12 sm:px-0">
+        <SubheadingText text="Technologies I have worked with" />
+        <motion.div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 py-8 px-12 sm:px-0"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.35 }}
+          variants={staggerContainer} >
           {skillsInfo.map(({ id, src, title, style }) => (
             <motion.div
-            variants={{
-              hidden: {opacity:0, scale:0.9},
-              visible: {opacity:1, scale: 1},
-            }}
-            
-             className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg  shadow-black/50 ${style}`} key={id}>
-              <img src={src} alt={`${title}-logo`} className="w-20 mx-auto" />
-              <p className="text-center mt-4 font-semibold text-stone-400">{title}</p>
+              variants={staggerChildren} >
+              <div
+                className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg  shadow-black/50 ${style}`} key={id}>
+                <img src={src} alt={`${title}-logo`} className="w-20 mx-auto" />
+                <p className="text-center mt-4 font-semibold text-stone-400">{title}</p>
+              </div>
             </motion.div>
-
-
           ))}
         </motion.div>
 
