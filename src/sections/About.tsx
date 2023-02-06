@@ -9,7 +9,7 @@ import { outterContainer, headingVariants, slideIn, staggerChildren, staggerCont
 const About = () => {
   return (
     <section id='about' className="py-5 dark:bg-neutral-800  overflow-hidden" aria-label="about section">
-      <motion.div className=' max-w-5xl mx-auto p-4 py-16 md:pl-20 '
+      <motion.div className=' max-w-5xl mx-auto p-4 py-8 md:py-16 md:pl-20 '
         variants={outterContainer}
         initial="hidden"
         whileInView="show"
