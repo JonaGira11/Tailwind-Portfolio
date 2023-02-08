@@ -4,6 +4,11 @@ I built my portfolio over a couple weeks adding more parts over time. I used Vit
 
 ## Technologies Used
 
- -First item
-- Second item
-- Third item
+ - Vite
+- React
+- TypeScript
+- Tailwind CSS
+- React-icons
+- Framer motion 
+
+site is hosted on **Vercel** 
