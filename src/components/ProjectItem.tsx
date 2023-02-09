@@ -16,10 +16,10 @@ const ProjectItem = ({ title, demo, github, image }: PropjectItemProps) => {
         <h3 className='font-bold text-2xl text-white tracking-wider text-center'>
           {title}
         </h3>
-        <a href={github} >
+        <a href={github} target="_blank" >
           <p className='max-w-[120px] my-3 text-center p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg'>GitHub</p>
         </a>
-        <a href={demo} >
+        <a href={demo} target="_blank" >
           <p className='max-w-[120px] text-center p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg'>Demo</p>
         </a>
 

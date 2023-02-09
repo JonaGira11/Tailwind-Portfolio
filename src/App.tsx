@@ -4,6 +4,7 @@ import Sidenav from './components/Sidenav'
 import About from "./sections/About"
 import { Contact } from "./components/Contact"
 import Footer from "./components/Footer"
+import Skills from "./components/Skills"
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Main />
       <About />
       <Projects/>
+      <Skills/>
       <Contact />
       <Footer/>
     </div>
