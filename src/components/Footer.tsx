@@ -11,14 +11,14 @@ const Footer = () => {
 
 
         <div className="flex flex-row md:mt-0 mt-6">
-          <a href="https://twitter.com/j_sallz11" className="text-neutral-600 mr-3 dark:text-white hover:scale-110 duration-300" aria-label="twitter link">
+          <a href="https://twitter.com/j_sallz11" className="text-neutral-600 mr-3 dark:text-white hover:scale-110 duration-300" aria-label="twitter link" target="_blank">
             <AiOutlineTwitter size={30} />
           </a>
-          <a href="https://github.com/JonaGira11"className="text-neutral-600 mr-3 dark:text-white hover:scale-110 duration-300" aria-label="github link">
+          <a href="https://github.com/JonaGira11"className="text-neutral-600 mr-3 dark:text-white hover:scale-110 duration-300" aria-label="github link" target="_blank">
             <AiOutlineGithub size={30}/>
           </a>
           <a href="https://www.linkedin.com/in/jonathan-giraldo-mosquera-b53083238/" className="text-neutral-600 mr-3 dark:text-white hover:scale-110 duration-300"
-          aria-label="linkedin link">
+          aria-label="linkedin link" target="_blank">
             <AiFillLinkedin size={30}/>
           </a>
 
