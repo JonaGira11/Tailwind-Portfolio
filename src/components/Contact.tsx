@@ -40,7 +40,7 @@ export const Contact = () => {
                     </div>
                     <div className='flex flex-col py-2'>
                         <label className='uppercase text-sm py-2 text-stone-400 font-semibold'>Message</label>
-                        <textarea className='accent-neutral-300 border-2 rounded-lg p-3 border-gray-300 resize-none dark:bg-stone-800 dark:text-white' rows={10} name="message"></textarea>
+                        <textarea className='accent-neutral-300 border-2 rounded-lg p-3 border-gray-300 resize-none dark:bg-stone-800 dark:text-white' rows={5} name="message"></textarea>
                     </div>
                     <button className='bg-sky-800 text-gray-100 mt-4 w-full rounded-lg p-4 hover:bg-sky-900' type='submit'>Send Message</button>
                 </motion.form>

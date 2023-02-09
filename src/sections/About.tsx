@@ -29,6 +29,13 @@ const About = () => {
             <ParaText key={aboutpara.id}>{aboutpara.para}</ParaText>
           </motion.div>
         ))}
+        <div className="pt-8 flex justify-center ">
+          <a className="bg-sky-800 p-3 rounded-xl text-gray-100 hover:bg-sky-400 point-cursor"
+        href="#contact">
+          Contact Me
+          </a>
+        </div>
+        
         
       </motion.div>
 
