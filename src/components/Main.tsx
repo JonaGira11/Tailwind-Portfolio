@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { mainVariants, mainTextA, mainTextB } from '../utils/motion'
+import { TypeAnimation } from 'react-type-animation'
 
 
 const img: string = new URL("../images/banner-main.jpg", import.meta.url).href
@@ -15,10 +16,36 @@ const Main = () => {
           whileInView="show"
           viewport={{ once: true, amount: 0.25 }}>
           <motion.h1 className='sm:text-5xl text-4xl font-bold text-gray-800 dark:text-white'
-            variants={mainTextA}>I am Jonathan</motion.h1>
-          <motion.h2 className='sm:text-3xl text-2xl text gray-600 dark:text-gray-300'
-            variants={mainTextB}>I'm a Web Developer</motion.h2>
+            variants={mainTextA}>Hi, I'm Jonathan</motion.h1>
+          <motion.h2 className='flex sm:text-3xl text-2xl text gray-600 dark:text-gray-300 font-semibold'
+            variants={mainTextB}>I'm a<TypeAnimation
+            sequence={[
+              'Full-Stack Devloper', // Types 'One'
+              2000, // Waits 1s
+              'Coder', // Deletes 'One' and types 'Two'
+              2000, // Waits 2s
+              'Tech Enthusiast', // Types 'Three' without deleting 'Two'
+              2000,
+            ]}
+            wrapper="div"
+            cursor={true}
+            repeat={Infinity}
+            style={{ fontSize: '1em', paddingLeft: '6px' }}
+          />
+            </motion.h2>
+
+              <div className="pt-8 ">
+          <a className="bg-sky-800 p-3 rounded-xl text-gray-100 hover:bg-sky-400 point-cursor"
+        href="#contact">
+          Contact Me
+          </a>
+          <a className="bg-sky-800 p-3 rounded-xl text-gray-100 hover:bg-sky-400 point-cursor ml-3"
+        href="#projects">
+          See Work
+          </a>
+        </div>
         </motion.div>
+      
 
       </div>
     </div>
