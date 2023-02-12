@@ -1,9 +1,7 @@
 import { aboutPara } from "../constants/data"
 import ParaText from "../components/ParaText"
-import { skillsInfo } from "../constants/data"
 import { motion } from "framer-motion"
-import SubheadingText from "../components/SubheadingText"
-import { outterContainer, headingVariants, slideIn, staggerChildren, staggerContainer } from "../utils/motion"
+import { outterContainer, headingVariants, slideIn } from "../utils/motion"
 
 
 const About = () => {
@@ -24,9 +22,11 @@ const About = () => {
         </div>
 
         {aboutPara.map((aboutpara) => (
-          <motion.div variants={slideIn}
+          <motion.div
+          key={aboutpara.id}
+           variants={slideIn}
           viewport={{ once: true, amount: 0.1 }} >
-            <ParaText key={aboutpara.id}>{aboutpara.para}</ParaText>
+            <ParaText  >{aboutpara.para}</ParaText>
           </motion.div>
         ))}
         <div className="pt-8 flex justify-center ">

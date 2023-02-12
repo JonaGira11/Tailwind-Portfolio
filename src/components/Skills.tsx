@@ -29,6 +29,7 @@ const Skills = () => {
           variants={staggerContainer} >
           {skillsInfo.map(({ id, src, title, style }) => (
             <motion.div
+            key={id}
               variants={staggerChildren} >
               <div
                 className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg  shadow-black/50 ${style}`} key={id}>

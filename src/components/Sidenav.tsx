@@ -18,12 +18,13 @@ const Sidenav = () => {
     const handleNav = () => {
         setNav(!nav)
     }
+    {/*adsfh */}
 
     return (
         <div>
             {/* small screens */}
 
-            <AiOutlineMenu size={25} className=" cursor-pointer absolute top-4 right-4 z-[99] md:hidden dark:text-white" onClick={handleNav}
+            <AiOutlineMenu size={25} className=" cursor-pointer fixed top-4 right-4 z-[99] md:hidden dark:text-white" onClick={handleNav}
             />{
                 nav ? (
                     <div className="fixed w-full h-screen bg-white/50 flex flex-col justify-center items-center z-20 md:hidden dark:bg-zinc-700/60">
