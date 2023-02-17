@@ -24,7 +24,7 @@ const Sidenav = () => {
             {/* toggle dark mode */}
             
             <button onClick={handleColorMode}
-                            className=" cursor-pointer absolute top-4 right-12 mr-6 z-[10] text-gray-700 dark:text-white">
+                            className=" cursor-pointer absolute top-4 right-12 mr-4 z-[10] text-gray-700 dark:text-white">
                             { (colorMode === "light") ? < BsFillMoonStarsFill size={25} aria-label="dark mode" /> : <BsFillSunFill size={25}  aria-label="light mode"/>
                              }
            </button>
