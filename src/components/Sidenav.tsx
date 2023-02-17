@@ -17,16 +17,18 @@ const Sidenav = () => {
     const handleNav = () => {
         setNav(!nav)
     }
-    {/*adsfh */}
+    
 
     return (
         <div>
-            {/* small screens */}
+            {/* toggle dark mode */}
+            
             <button onClick={handleColorMode}
-                            className=" cursor-pointer absolute top-4 right-14 z-[10] text-gray-700 dark:text-white">
+                            className=" cursor-pointer absolute top-4 right-12 mr-6 z-[10] text-gray-700 dark:text-white">
                             { (colorMode === "light") ? < BsFillMoonStarsFill size={25} aria-label="dark mode" /> : <BsFillSunFill size={25}  aria-label="light mode"/>
                              }
            </button>
+           {/* small screens */}
            
             { !nav ? <HiMenu size={28} aria-label="menu open" className=" cursor-pointer absolute top-4 right-4 z-[99] md:hidden  text-gray-700 dark:text-white" onClick={handleNav}
             /> : <HiOutlineX size={28} aria-label="menu close" className=" cursor-pointer absolute top-4 right-4 z-[99] md:hidden  text-gray-700 dark:text-white" onClick={handleNav} />}{
