@@ -16,13 +16,13 @@ const Main = () => {
           whileInView="show"
           viewport={{ once: true, amount: 0.25 }}>
           <motion.h1 className='sm:text-5xl text-4xl font-bold text-gray-800 dark:text-white'
-            variants={mainTextA}>Hi, I'm Jonathan</motion.h1>
+            variants={mainTextA}>Hi! I'm Jonathan</motion.h1>
           <motion.h2 className='flex sm:text-3xl text-2xl text gray-600 dark:text-gray-300 font-semibold'
             variants={mainTextB}>I'm a<TypeAnimation
             sequence={[
-              'Full-Stack Devloper', // Types 'One'
+              'Coder', // Types 'One'
               2000, // Waits 1s
-              'Coder', // Deletes 'One' and types 'Two'
+              'Full-Stack Developer', // Deletes 'One' and types 'Two'
               2000, // Waits 2s
               'Tech Enthusiast', // Types 'Three' without deleting 'Two'
               2000,

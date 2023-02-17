@@ -1,13 +1,12 @@
-import { AiOutlineMenu, AiOutlineHome, AiOutlineUser, AiOutlineProject, AiOutlineMail } from "react-icons/ai"
-import { WiMoonAltWaxingCrescent4 } from "react-icons/wi"
-import { FiSun } from "react-icons/fi"
+import { AiOutlineHome, AiOutlineUser, AiOutlineProject, AiOutlineMail } from "react-icons/ai"
+import { BsFillMoonStarsFill,BsFillSunFill } from "react-icons/bs"
+import { HiMenu,HiOutlineX } from "react-icons/hi"
 import { useState } from "react"
 import useColorMode from "../hooks/use.ColorMode"
 import { motion } from "framer-motion"
 
 
 const Sidenav = () => {
-
     const [nav, setNav] = useState<boolean>(false)
 
     const [colorMode, setColorMode] = useColorMode();
@@ -23,9 +22,14 @@ const Sidenav = () => {
     return (
         <div>
             {/* small screens */}
-
-            <AiOutlineMenu size={25} className=" cursor-pointer fixed top-4 right-4 z-[99] md:hidden dark:text-white" onClick={handleNav}
-            />{
+            <button onClick={handleColorMode}
+                            className=" cursor-pointer absolute top-4 right-14 z-[10] text-gray-700 dark:text-white">
+                            { (colorMode === "light") ? < BsFillMoonStarsFill size={25} aria-label="dark mode" /> : <BsFillSunFill size={25}  aria-label="light mode"/>
+                             }
+           </button>
+           
+            { !nav ? <HiMenu size={28} aria-label="menu open" className=" cursor-pointer absolute top-4 right-4 z-[99] md:hidden  text-gray-700 dark:text-white" onClick={handleNav}
+            /> : <HiOutlineX size={28} aria-label="menu close" className=" cursor-pointer absolute top-4 right-4 z-[99] md:hidden  text-gray-700 dark:text-white" onClick={handleNav} />}{
                 nav ? (
                     <div className="fixed w-full h-screen bg-white/50 flex flex-col justify-center items-center z-20 md:hidden dark:bg-zinc-700/60">
                         <a
@@ -46,17 +50,7 @@ const Sidenav = () => {
                             <AiOutlineMail size={20} />
                             <span className="pl-4">Contact</span>
                         </a>
-                        <button
-                            onClick={handleColorMode}
-                            className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in dark:bg-zinc-600  dark:text-white dark:shadow-zinc-900">
-                            {
-                                (colorMode === "light") ?
-                                    <WiMoonAltWaxingCrescent4 size={20} /> :
-                                    <FiSun size={20} />
-                            }
-                            <span className="pl-4">Switch Theme</span>
-                        </button>
-
+                     
                     </div>
                 ) : (
                     null
@@ -91,16 +85,7 @@ const Sidenav = () => {
                     <a href="#contact" className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2  p-4 cursor-pointer hover:scale-110 ease-in duration-100 dark:bg-zinc-600  dark:text-white dark:shadow-zinc-700">
                         <AiOutlineMail size={20} />
                     </a>
-                    <button
-                        onClick={handleColorMode}
-                        className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2  p-4 cursor-pointer hover:scale-110 ease-in duration-100 dark:bg-zinc-600  dark:text-white dark:shadow-gray-600">
-                        {
-                            (colorMode === "light") ?
-                                <WiMoonAltWaxingCrescent4 size={20} /> :
-                                <FiSun size={20} />
-                        }
-
-                    </button>
+                  
                 </div>
             </motion.div>
         </div>
