@@ -27,20 +27,20 @@ export const Contact = () => {
                     variants={formVariants}>
                     <div className='flex flex-col pb-2 pt-8'>
                         <label className='uppercase text-sm py-2 text-stone-400 font-semibold'>Name</label>
-                        <input type="text" name="name"
+                        <input type="text" name="name" required
                             className='border-2 rounded-lg p-3 border-gray-300  flex dark:bg-stone-800 dark:text-white' />
                     </div>
                     <div className='flex flex-col py-2 '>
                         <label className='uppercase text-sm py-2 text-stone-400 font-semibold'>Email</label>
-                        <input className='border-2 rounded-lg p-3 border-gray-300  dark:bg-stone-800 dark:text-white' type="email" name="email" />
+                        <input className='border-2 rounded-lg p-3 border-gray-300  dark:bg-stone-800 dark:text-white' type="email" name="email" required />
                     </div>
                     <div className='flex flex-col py-2'>
                         <label className='uppercase text-sm py-2 text-stone-400 font-semibold'>Subject</label>
-                        <input className='border-2 rounded-lg p-3 border-gray-300  dark:bg-stone-800 dark:text-white' type="text" name="subject" />
+                        <input className='border-2 rounded-lg p-3 border-gray-300  dark:bg-stone-800 dark:text-white' type="text" name="subject"  required/>
                     </div>
                     <div className='flex flex-col py-2'>
                         <label className='uppercase text-sm py-2 text-stone-400 font-semibold'>Message</label>
-                        <textarea className='accent-neutral-300 border-2 rounded-lg p-3 border-gray-300 resize-none dark:bg-stone-800 dark:text-white' rows={5} name="message"></textarea>
+                        <textarea className='accent-neutral-300 border-2 rounded-lg p-3 border-gray-300 resize-none dark:bg-stone-800 dark:text-white' rows={5} name="message" required></textarea>
                     </div>
                     <button className='bg-sky-800 text-gray-100 mt-4 w-full rounded-lg p-4 hover:bg-sky-900' type='submit'>Send Message</button>
                 </motion.form>

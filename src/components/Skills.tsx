@@ -1,7 +1,7 @@
 import { skillsInfo } from "../constants/data"
 import { motion } from "framer-motion"
 import SubheadingText from "../components/SubheadingText"
-import { outterContainer, headingVariants, slideIn, staggerChildren, staggerContainer } from "../utils/motion"
+import { outterContainer, headingVariants, staggerChildren, staggerContainer } from "../utils/motion"
 
 
 const Skills = () => {
@@ -22,7 +22,7 @@ const Skills = () => {
           >SKILLS</motion.h3>
         </div>
         <SubheadingText text="Technologies I have worked with" />
-        <motion.div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 py-8 px-12 sm:px-0"
+        <motion.div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-8 py-8 px-12 sm:px-0"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.35 }}
@@ -33,7 +33,7 @@ const Skills = () => {
               variants={staggerChildren} >
               <div
                 className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg  shadow-black/50 ${style}`} key={id}>
-                <img src={src} alt={`${title}-logo`} className="w-20 mx-auto" />
+                <img src={src} alt={`${title}-logo`} className="w-[60px] mx-auto" />
                 <p className="text-center mt-4 font-semibold text-stone-400">{title}</p>
               </div>
             </motion.div>

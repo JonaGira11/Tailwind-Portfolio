@@ -1,7 +1,7 @@
 import { aboutPara } from "../constants/data"
 import ParaText from "../components/ParaText"
 import { motion } from "framer-motion"
-import { outterContainer, headingVariants, slideIn } from "../utils/motion"
+import { outterContainer, headingVariants, slideIn,formVariants } from "../utils/motion"
 
 
 const About = () => {
@@ -29,12 +29,13 @@ const About = () => {
             <ParaText  >{aboutpara.para}</ParaText>
           </motion.div>
         ))}
-        <div className="pt-8 flex justify-center ">
+        <motion.div className="pt-8 flex justify-center "
+        variants={formVariants}>
           <a className="bg-sky-800 p-3 rounded-xl text-gray-100 hover:bg-sky-400 point-cursor"
         href="#contact">
           Contact Me
           </a>
-        </div>
+        </motion.div>
         
         
       </motion.div>
