@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className='flex justify-center items-center sm:py-8 py-6 flex-col px-10 dark:bg-neutral-800'>
       <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[2px] border-t-[#3F3E45]">
-        <p className="font-normal text-center text-[18px] leading-[27px] text-neutral-600">
+        <p className="font-normal text-center text-[18px] leading-[27px] text-neutral-600 dark:text-neutral-400">
           Copyright Ⓒ {year} Jonathan
         </p>
 
