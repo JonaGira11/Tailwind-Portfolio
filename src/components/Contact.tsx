@@ -19,7 +19,7 @@ export const Contact = () => {
                 </div>
 
                 <SubheadingText text="Get in contact with me " />
-<motion.div className="bg-gray-500/30 p-4 border max-w-[500px] mx-auto rounded-xl border-none mt-4"
+<motion.div className="bg-gray-500/30 p-4 border max-w-[500px] mx-auto rounded-xl border-none mt-4 shadow-md shadow-gray-400 dark:shadow-black/20"
   viewport={{ once: true }}
   initial="hidden"
   whileInView="show"
