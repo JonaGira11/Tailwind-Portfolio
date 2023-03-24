@@ -10,5 +10,9 @@ I built my portfolio over a couple weeks adding more parts over time. I used Vit
 - Tailwind CSS
 - React-icons
 - Framer motion 
+- React-hook-form
+- zod
+- emailjs
+- react toastify
 
 site is hosted on **Vercel** 
