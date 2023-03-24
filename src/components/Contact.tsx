@@ -4,8 +4,12 @@ import { outterContainer, headingVariants, formVariants } from "../utils/motion"
 import {z, ZodType} from "zod"
 import {useForm} from "react-hook-form"
 import {zodResolver} from "@hookform/resolvers/zod"
+import emailjs from '@emailjs/browser';
+import { ReactEventHandler, useRef } from "react"
 
 export const Contact = () => {
+
+    const form = useRef<HTMLFormElement>(null)
 type FormData = {
     name: string;
     email: string;
@@ -21,7 +25,10 @@ const schema:ZodType<FormData> = z.object({
 const {handleSubmit, register, formState: {errors}} = useForm<FormData>({ resolver: zodResolver(schema)})
 
 const submitData = (data:FormData) => {
-console.log(data)
+
+emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current as HTMLFormElement, import.meta.env.VITE_PUBLIC_KEY )
+alert("message sent")
+form.current?.reset()
 }
 
     return (
@@ -45,7 +52,7 @@ console.log(data)
   initial="hidden"
   whileInView="show"
   variants={formVariants}>
-                <form action='https://getform.io/f/58db4c0c-b262-405f-ba7b-0adf98c43ef0' method='POST' encType="multipart/form-data" onSubmit={handleSubmit(submitData)}>
+                <form   ref={form} onSubmit={handleSubmit(submitData)}>
                        
                     <div className='flex flex-col  '>
                         <label className='uppercase text-sm py-2 text-stone-400 font-semibold'>Name</label>
