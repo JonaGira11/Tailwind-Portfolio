@@ -9,6 +9,7 @@ import { ReactEventHandler, useRef } from "react"
 
 export const Contact = () => {
 
+    
     const form = useRef<HTMLFormElement>(null)
 type FormData = {
     name: string;
