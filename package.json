@@ -16,6 +16,7 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.43.7",
     "react-icons": "^4.7.1",
+    "react-toastify": "^9.1.2",
     "react-type-animation": "^2.1.2",
     "vite-plugin-favicons-inject": "^2.2.0",
     "zod": "^3.21.4"
