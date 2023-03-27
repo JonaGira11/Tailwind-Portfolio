@@ -57,28 +57,28 @@ form.current?.reset()
                 <form   ref={form} onSubmit={handleSubmit(submitData)}>
                        
                     <div className='flex flex-col  '>
-                        <label className='uppercase text-sm py-2 text-stone-400 font-semibold' aria-label="name input">Name</label>
+                        <label className='uppercase text-sm py-2 text-stone-400 font-semibold' >Name</label>
                         <input type="text"  required {...register("name")}
-                            className='border-2 rounded-lg p-3 border-gray-300  flex dark:bg-neutral-800 dark:text-white' />
+                            className='border-2 rounded-lg p-3 border-gray-300  flex dark:bg-neutral-800 dark:text-white' aria-label="name input"/>
                             {errors.name && <span className="text-red-600">{errors.name.message}</span>}
                     </div>
                     <div className='flex flex-col  '>
-                        <label className='uppercase text-sm py-2 text-stone-400 font-semibold' aria-label="email input">Email</label>
-                        <input className='max-w-[600px] border-2 rounded-lg p-3 border-gray-300  dark:bg-neutral-800 dark:text-white' type="email"  required {...register("email")} />
+                        <label className='uppercase text-sm py-2 text-stone-400 font-semibold' >Email</label>
+                        <input className='max-w-[600px] border-2 rounded-lg p-3 border-gray-300  dark:bg-neutral-800 dark:text-white' type="email"  required {...register("email")} aria-label="email input"/>
                         {errors.email && <span className="text-red-600">{errors.email.message}</span>}
                     </div>
                     <div className='flex flex-col'>
-                        <label className='uppercase text-sm py-2 text-stone-400 font-semibold' aria-label="subject input">Subject</label>
-                        <input className='border-2 rounded-lg p-3 border-gray-300  dark:bg-neutral-800 dark:text-white' type="text" {...register("subject")}  required/>
+                        <label className='uppercase text-sm py-2 text-stone-400 font-semibold' >Subject</label>
+                        <input className='border-2 rounded-lg p-3 border-gray-300  dark:bg-neutral-800 dark:text-white' type="text" {...register("subject")}  required aria-label="subject input"/>
                         {errors.subject && <span className="text-red-600">{errors.subject.message}</span>}
                     </div>
                     <div className='flex flex-col'>
-                        <label className='uppercase text-sm py-2 text-stone-400 font-semibold' aria-label="message input">Message</label>
-                        <textarea className='accent-neutral-300 border-2 rounded-lg p-3 border-gray-300 resize-none dark:bg-neutral-800 dark:text-white' rows={3} {...register("message")} required></textarea>
+                        <label className='uppercase text-sm py-2 text-stone-400 font-semibold'>Message</label>
+                        <textarea className='accent-neutral-300 border-2 rounded-lg p-3 border-gray-300 resize-none dark:bg-neutral-800 dark:text-white' rows={3} {...register("message")} required  aria-label="message input"></textarea>
                         {errors.message && <span className="text-red-600">{errors.message.message}</span>}
                     </div>
-                    <div className="grid place-content-center" aria-label="send input">
-                    <button className='bg-sky-800 text-gray-100 mt-4  w-60 rounded-lg p-4 hover:bg-sky-900 ' type='submit'>Send Message</button>
+                    <div className="grid place-content-center" >
+                    <button className='bg-sky-800 text-gray-100 mt-4  w-60 rounded-lg p-4 hover:bg-sky-900 ' type='submit' aria-label="send input">Send Message</button>
                     </div>
                 </form>
             </motion.div>
