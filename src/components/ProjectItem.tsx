@@ -11,7 +11,7 @@ const ProjectItem = ({ title, demo, github, image }: PropjectItemProps) => {
   return (
     <motion.div className=' relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 dark:shadow-gray-700    rounded-xl group hover:bg-gradient-to-r from-gray-200 to-sky-600'
       variants={staggerChildren}>
-      <img src={image} alt={title} className='aspect-[4/3] object-cover rounded-xl group-hover:opacity-10' />
+      <img src={image} alt={title} className='aspect-[4/3] object-cover rounded-xl group-hover:opacity-10' width={500} height={500} />
       <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%]  translate-y-[-50%]'>
         <h3 className='font-bold text-2xl text-white tracking-wider text-center'>
           {title}
