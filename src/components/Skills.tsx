@@ -33,7 +33,7 @@ const Skills = () => {
               variants={staggerChildren} >
               <div
                 className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg  shadow-black/50 ${style}`} key={id}>
-                <img src={src} alt={`${title}-logo`} className="w-[60px] mx-auto" width={100} height={100} />
+                <img src={src} alt={`${title}-logo`} className="w-[60px] mx-auto" width={80} height={80} />
                 <p className="text-center mt-4 font-semibold text-stone-400">{title}</p>
               </div>
             </motion.div>

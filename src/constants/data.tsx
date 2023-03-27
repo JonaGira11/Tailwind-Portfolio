@@ -1,11 +1,11 @@
 import html from "../images/logos/html.png";
-import css from "../images/logos/css.png";
+import css from "../images/logos/css.webp";
 import javascript from "../images/logos/javascript.png";
 import reactImage from "../images/logos/react.png";
 import nextjs from "../images/logos/nextjs.png";
 import node from "../images/logos/node.png";
 import typscript from "../images/logos/typescript.png";
-import tailwind from "../images/logos/tailwind.png";
+import tailwind from "../images/logos/mongo.webp";
 const HuluThumnail: string = new URL(
   "../images/thumbnails/huluThumbnail.webp",
   import.meta.url
@@ -70,7 +70,7 @@ type paraType = {
 export const aboutPara: paraType[] = [
   {
     id: 1,
-    para: "Hi, I'm Jonathan. A self-taught Full Stack Developer. I have a passion for creating responsive full-stack websites and webapps. I am interested in all things JavaScript. A powerful tool used to create full-stack applications. Coding allows my creativity to come alive on the front end, while tickling my problem-solving itch when I run into problems (very often) on the back end. I am constantly learning new libraries and applying what I learn by building new things with them.  I showcase some of my projects below or for more on my GitHub.",
+    para: "Hi, I'm Jonathan. A self-taught Full Stack Developer. I have a passion for creating responsive full-stack websites and webapps. I am interested in all things JavaScript. A powerful tool used to create full-stack applications. Coding allows my creativity to come alive on the front end, while tickling my problem-solving itch when I run into problems (very often) on the back end. I am constantly learning new libraries and applying what I learn by building new things with them.  I showcase some of my projects below or on my GitHub.",
   },
   {
     id: 2,

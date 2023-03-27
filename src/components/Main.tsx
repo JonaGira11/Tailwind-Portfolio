@@ -16,8 +16,8 @@ const Main = () => {
         src={img}
         className="w-full h-screen object-cover scale-x-[1]"
         alt="background image"
-        width={2500}
-        height={1700}
+        width={2000}
+        height={1500}
       />
       <div className="w-full h-screen absolute top-0 left-0 bg-gray-200/90 dark:bg-neutral-900/90">
         <motion.div
