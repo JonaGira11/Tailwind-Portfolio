@@ -1,11 +1,11 @@
-import html from "../images/logos/html.png";
+import html from "../images/logos/html.webp";
 import css from "../images/logos/css.webp";
-import javascript from "../images/logos/javascript.png";
-import reactImage from "../images/logos/react.png";
-import nextjs from "../images/logos/nextjs.png";
-import node from "../images/logos/node.png";
-import typscript from "../images/logos/typescript.png";
-import tailwind from "../images/logos/mongo.webp";
+import javascript from "../images/logos/javascript.webp";
+import reactImage from "../images/logos/react.webp";
+import nextjs from "../images/logos/nextjs.webp";
+import node from "../images/logos/node.webp";
+import typscript from "../images/logos/typescript.webp";
+import tailwind from "../images/logos/tailwind.webp";
 const HuluThumnail: string = new URL(
   "../images/thumbnails/huluThumbnail.webp",
   import.meta.url
