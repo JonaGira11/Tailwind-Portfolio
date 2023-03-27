@@ -7,19 +7,19 @@ import node from "../images/logos/node.png";
 import typscript from "../images/logos/typescript.png";
 import tailwind from "../images/logos/tailwind.png";
 const HuluThumnail: string = new URL(
-  "../images/thumbnails/huluThumbnail.png",
+  "../images/thumbnails/huluThumbnail.webp",
   import.meta.url
 ).href;
 const MetaversusThumbnail: string = new URL(
-  "../images/thumbnails/metaversusThumbnail.png",
+  "../images/thumbnails/metaversusThumbnail.webp",
   import.meta.url
 ).href;
 const ShoppingCartThumbnail: string = new URL(
-  "../images/thumbnails/shoppingCartThumbnail.png",
+  "../images/thumbnails/shoppingCartThumbnail.webp",
   import.meta.url
 ).href;
 const MordernUIThumbnail: string = new URL(
-  "../images/thumbnails/MordernUIThumbnail.png",
+  "../images/thumbnails/MordernUIThumbnail.webp",
   import.meta.url
 ).href;
 

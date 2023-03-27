@@ -7,7 +7,7 @@ import {
   AiFillLinkedin,
 } from "react-icons/ai";
 
-const img: string = new URL("../images/banner-main.jpg", import.meta.url).href;
+const img: string = new URL("../images/banner-main.webp", import.meta.url).href;
 
 const Main = () => {
   return (

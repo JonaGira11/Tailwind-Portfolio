@@ -9,8 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <App />
-    <ToastContainer  
-    toastClassName={()=> "bg-black"}
+    <ToastContainer
       position="top-center"
       autoClose={2500}
       hideProgressBar={false}
