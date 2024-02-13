@@ -70,11 +70,11 @@ type paraType = {
 export const aboutPara: paraType[] = [
   {
     id: 1,
-    para: "Hi, I'm Jonathan. A self-taught Full Stack Developer. I have a passion for creating responsive full-stack websites and webapps. I am interested in all things JavaScript. A powerful tool used to create full-stack applications. Coding allows my creativity to come alive on the front end, while tickling my problem-solving itch when I run into problems (very often) on the back end. I am constantly learning new libraries and applying what I learn by building new things with them.  I showcase some of my projects below or on my GitHub.",
+    para: "Hi, I'm Jonathan. A Full Stack Developer. Creating responsive full-stack websites and webapps using JavaScript is what I do best. I discovered coding a few years ago by a recommendation and haven't looked by since. ",
   },
   {
     id: 2,
-    para: "I am open to Job opportunities where I can grow, contribute and continue to learn. Feel free to contact me below.",
+    para: "I love the community around web development and I am excited for a full time career in software engineering. I am ready to be apart of a great team while bringing value and continuing my growth as a developer. Feel free to contact me below.",
   },
 ];
 
