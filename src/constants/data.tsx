@@ -70,7 +70,7 @@ type paraType = {
 export const aboutPara: paraType[] = [
   {
     id: 1,
-    para: "Hi, I'm Jonathan. A Full Stack Developer. Creating responsive full-stack websites and webapps using JavaScript is what I do best. I discovered coding a few years ago by a recommendation and haven't looked by since. ",
+    para: "Hi I'm Jonathan, a Full Stack Developer. Creating responsive full-stack websites and webapps using JavaScript is what I do best. I discovered coding a few years ago by a recommendation and haven't looked by since. ",
   },
   {
     id: 2,
